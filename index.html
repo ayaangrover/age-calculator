@@ -70,9 +70,18 @@
           border-radius: 6px;
           margin-bottom: 10px;
       }
+      #musicInfo{
+        max-width: 100px;
+        color:#ffffff;
+        background-color: #00000000;
+        font-size: xx-small;
+      }
   </style>
 </head>
 <body>
+  <!-- Play the music on page load -->
+  <audio id="music" src="space.mp3" autoplay loop></audio>
+
   <!-- Preload audio to reduce lag on invalid input -->
   <script>
     const errorAudio = new Audio("/error.mp3");
@@ -88,6 +97,7 @@
       <input type="date" id="dob" required placeholder="Enter your date of birth">
       <button type="button" onclick="calculateAge()">Calculate</button>
     </form>
+    <button onclick="musicInfo()" id="musicInfo">music info</button>
     <p id="ageResult"></p>
   </div>
 
@@ -137,6 +147,16 @@
       dobInput.style.display = "none";
       pageTitle.textContent = ""; // Update title
       calculateButton.style.display = "none"; // Hide the button
+      
+      // Hide the music info button
+      const musicInfoButton = document.getElementById("musicInfo");
+      musicInfoButton.style.display = "none";
+    }
+    
+    function musicInfo() {
+      alert("Music info: Space Heroes by MaxKoMusic | https://maxkomusic.com/ ")
+      const musicInfoButton = document.getElementById("musicInfo");
+      musicInfoButton.style.display = "none"; // Hide the button after clicking
     }
   </script>
 
