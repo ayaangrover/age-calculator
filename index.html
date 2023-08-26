@@ -82,8 +82,21 @@
       <p id="ageResult"></p>
   </div>
 
+  <audio id="backgroundAudio" src="space.mp3" loop></audio> <!-- Added 'loop' attribute -->
+    
   <script>
+      let audioIsPlaying = false; // Flag to prevent multiple audio plays
+
+      function playBackgroundAudio() {
+        if (!audioIsPlaying) {
+          const backgroundAudio = document.getElementById("backgroundAudio");
+          backgroundAudio.volume = 1;
+          backgroundAudio.play();
+          audioIsPlaying = true;
+        }
+      }
       function calculateAge() {
+          playBackgroundAudio(); // Play the audio when the user clicks "Calculate"
           const dobInput = document.getElementById("dob");
           const pageTitle = document.getElementById("pageTitle");
           const dob = new Date(dobInput.value);
