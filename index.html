@@ -80,17 +80,12 @@
   </style>
 </head>
 <body>
-  <!-- Play the music on page load -->
-  <audio id="music" src="space.mp3" autoplay loop></audio>
 
   <!-- Preload audio to reduce lag on invalid input -->
   <script>
     const errorAudio = new Audio("/error.mp3");
     const clickAudio = new Audio("/click.mp3");
   </script>
-
-  <!-- Play click sound on button click -->
-  <audio autoplay loop src="space.mp3"></audio>
 
   <div class="container">
     <h1 id="pageTitle">Age Calculator</h1>
