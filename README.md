@@ -8,9 +8,10 @@ This is a simple web application that allows users to calculate their age based 
 - Dynamic background animation using Three.js library.
 - Click sound when the "Calculate" button is clicked.
 - Error sound when invalid input is detected.
+- Space-themed Music.
 
 ## Usage
-view at https://ayaangrover.github.io/age-calculator
+View at https://ayaangrover.github.io/age-calculator.
 
 Credits: 
 Background: https://redstapler.co/space-warp-background-effect-three-js/ for help with the three.js code.
