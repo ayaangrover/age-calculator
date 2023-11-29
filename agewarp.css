@@ -2,7 +2,7 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: black;
+  background: rgb(59, 59, 165);
   overflow: hidden;
   display: flex;
   justify-content: center;
