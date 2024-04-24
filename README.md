@@ -13,6 +13,5 @@ This is a simple web application that allows users to calculate their age based 
 ## Usage
 View at https://ayaangrover.github.io/age-calculator.
 
-Credits: 
-Background: https://redstapler.co/space-warp-background-effect-three-js/ for help with the three.js code.
+Credits:
 Music: Space Heroes by MaxKoMusic | https://maxkomusic.com/ Music promoted by https://www.free-stock-music.com Creative Commons / Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
